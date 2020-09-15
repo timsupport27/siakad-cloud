@@ -1,0 +1,129 @@
+
+
+<html>
+<head>
+	<title>Master Lulusan</title>
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+	<link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<style>
+</head>
+<body>
+<style type="text/css">
+	body {
+		margin: 0 auto;
+	}
+	body, td, th {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 12px;
+	}
+	th {
+		text-align: center;
+	}
+
+	@media screen{
+		.table-head{
+			width: 70%;
+		}
+		.table-bordereds{
+			border-collapse: collapse;
+			width: 70%;
+		}
+		.table-bordereds td,
+		.table-bordereds th {
+		    border: 1px solid #000!important;
+		}
+
+		.table-sign{
+			width: 70%;
+		}
+	}
+	@media print{
+		@page{
+			size: A4 portrait landscape;
+		}
+		.table-head{
+			width: 100%;
+		}
+		.table-bordereds{
+			border-collapse: collapse;
+			width: 100%;
+		}
+		.table-bordereds td,
+		.table-bordereds th {
+		    border: 1px solid #000!important;
+		}
+
+		.table-sign{
+			width: 100%;
+		}
+	}
+</style>
+<br/>
+	<table class="table table-bordereds" align="center" border="1">
+    <thead>
+    	<tr class="info">
+            <th align="center" colspan="11">Data Diri Lulusan</th>
+            <th align="center" colspan="3"></th>
+            <th align="center" colspan="10">Data Perkuliahan</th>
+            <th align="center" colspan="6">Informasi Orangtua/Wali Lulusan</th>
+            <th align="center" colspan="3">Informasi Setelah Lulus dari PTKI</th>
+            <th align="center" colspan="3">Sertifikat Kompetensi Yang Dimiliki Lulusan</th>
+        </tr>
+        <tr class="info">
+            <th align="center" rowspan="2">Nama Lengkap Lulusan</th>
+            <th align="center" rowspan="2">Nomor Induk Mahasiswa (NIM)</th>
+            <th align="center" rowspan="2">Nama Induk Registrasi Mahasiswa (NIRM)</th>
+            <th align="center" rowspan="2">Nama Induk Siswa Nasional (NISN)</th>
+            <th align="center" rowspan="2">Tempat Lahir</th>
+            <th align="center" colspan="3">Tanggal Lahir</th>
+            <th align="center" rowspan="2">Jenis Kelamin</th>
+            <th align="center" rowspan="2">Asal Negara</th>
+            <th align="center" rowspan="2">Asal Pendidikan Sebelumnya</th>
+            <th align="center" colspan="3">Tanggal Pertama Masuk PTKI</th>
+            <th align="center" rowspan="2">Jenjang Pendidikan</th>
+            <th align="center" rowspan="2">Nama Fakultas/Jurusan</th>
+            <th align="center" rowspan="2">Program Studi</th>
+            <th align="center" rowspan="2">Jumlah SKS Yang Diselesaikan</th>
+            <th align="center" rowspan="2">Jumlah Semester Yang Diselesaikan</th>
+            <th align="center" rowspan="2">Indeks Prestasi Kumulatif (IPK) Akhir</th>
+            <th align="center" rowspan="2">Nomor Ijazah</th>
+            <th align="center" colspan="3">Tanggal Ijazah</th>
+            <th align="center" rowspan="2">Rata-rata Penghasilan Orangtua/Wali per Bulan</th>
+            <th align="center" colspan="2">Pekerjaan Orangtua/Wali</th>
+            <th align="center" colspan="2">Pendidikan Orangtua/Wali</th>
+            <th align="center" rowspan="2">Alamat</th>
+            <th align="center" rowspan="2">Status Setelah Lulus</th>
+            <th align="center" rowspan="2">Jenis Pekerjaan Setelah Lulus (Jika Bekerja)</th>
+            <th align="center" rowspan="2">Status Domisili Setelah Lulus</th>
+            <th align="center" rowspan="2">SKPI (Surat Keterangan Pendamping Ijazah)</th>
+            <th align="center" rowspan="2">Sertifikat Keahlian Bahasa Inggris</th>
+            <th align="center" rowspan="2">Sertifikat Keahlian Bahasa Arab</th>
+        </tr>
+        <tr class="info">            
+            <!-- tanggal lahir -->
+            <th align="center">Tgl</th>
+            <th align="center">Bln</th>
+            <th align="center">Thn</th>
+            <!-- tanggal masuk ptki -->
+            <th align="center">Tgl</th>
+            <th align="center">Bln</th>
+            <th align="center">Thn</th>
+            <!-- tanggal ijazah -->
+            <th align="center">Tgl</th>
+            <th align="center">Bln</th>
+            <th align="center">Thn</th>
+            <!-- pekerjaan orangtua/wali -->
+            <th align="center">Ayah/Wali</th>
+            <th align="center">Ibu/Wali</th>
+            <!-- pendidikan orangtua/wali -->
+            <th align="center">Ayah/Wali</th>
+            <th align="center">Ibu/Wali</th>
+        </tr>
+    </thead>
+    <tbody>
+                    <tr><td colspan="49" class="text-center">Tidak ada data</td></tr>
+            </tbody>
+</table>
+</body>
+</html>

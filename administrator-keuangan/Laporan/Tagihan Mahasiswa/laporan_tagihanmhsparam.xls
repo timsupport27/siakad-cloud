@@ -1,0 +1,327 @@
+
+<html>
+
+<head>
+	<title>Cetak Laporan Tagihan Mahasiswa</title>
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+	<link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<style>
+		body {
+			margin: 0 auto;
+		}
+
+		body,
+		td,
+		th {
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 12px;
+		}
+
+		th {
+			text-align: center;
+		}
+
+		.nama_pt {
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 1.1;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.info_pt {
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.kop {
+			border-spacing: 0;
+			border-collapse: collapse;
+			border-bottom-style: double;
+		}
+
+		.side {
+			width: 8%;
+		}
+
+		.img {
+			width: 80px;
+		}
+
+		@media screen {
+			.kop-width {
+				width: 70%;
+			}
+		}
+
+		@media print {
+			.kop-width {
+				width: 100%;
+			}
+		}
+
+		@media screen {
+
+
+			.kop-logo {
+				width: 70%;
+				margin: 0 auto;
+			}
+
+			.kop-logo img {
+				width: 100%;
+			}
+			.custom-kop-html table{
+				width: 70% !important;
+				text-align: center !important;
+			}
+		}
+
+		@media print {
+
+			.kop-logo {
+				width: 100% !important;
+			}
+
+			.kop-logo img {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<p class="navbar-brand">Cetak Laporan Tagihan Mahasiswa</p>
+				<button type="button" class="btn btn-primary btn-flat navbar-btn navbar-right" onclick="window.print(); return false;"><i class="fa fa-print"></i> Cetak</button>
+			</div>
+		</nav>
+				<table width="70%" align="center" class="kop kop-width">
+			<tr>
+				<td class="side"></td>
+				<td class="img" rowspan="3">
+											<img src="http://siakad.stikessurabaya.ac.id/uploads/logoPT.png" alt="logo" class="logo-default" height="80">
+									</td>
+				<td colspan="3" class="nama_pt">
+					<!-- SEKOLAH TINGGI ILMU KESEHATAN SURABAYA -->
+					SEKOLAH TINGGI ILMU KESEHATAN SURABAYA				</td>
+				<td class="side"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="3" class="info_pt">
+					<!-- Alamat : Jl Medokan Semampir Indah 27 -->
+					Alamat : Jl Medokan Semampir Indah 27				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="3" class="info_pt">
+					<!-- Kodepos : 60296, Telepon : 031-5913372 -->
+					Kodepos : 60296, 					Telepon : 031-5913372				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td colspan="3" style="border-bottom:1px solid black; padding-bottom: 8px;" class="info_pt">
+					<!-- Website : www.stikessurabaya.ac.id, Email : info@stikessurabaya.ac.id, Faximile : 031-5939466 -->
+					Website : www.stikessurabaya.ac.id | 					Email : info@stikessurabaya.ac.id | 					Faximile : 031-5939466				</td>
+				<td></td>
+			</tr>
+		</table>
+	<br/>
+<style type="text/css">
+@media screen{
+	.table-bordereds{
+		border-collapse: collapse;
+		width: 70%;
+	}
+	.table-bordereds td,
+	.table-bordereds th {
+	    border: 1px solid #000!important;
+	}
+
+	.table-sign{
+		width: 70%;
+	}
+	.table-set{
+		width: 70%;
+	}
+	.table-set td, th {
+		padding:5px;
+		font-weight: bold;
+	}
+	.table-name{
+		width: 70%;
+	}
+}
+@media print{
+	@page{
+		size: A4 portrait landscape;
+	}
+	.table-bordereds{
+		border-collapse: collapse;
+		width: 100%;
+	}
+	.table-bordereds td,
+	.table-bordereds th {
+	    border: 1px solid #000!important;
+	}
+
+	.table-sign{
+		width: 100%;
+	}
+	.table-set{
+		width: 100%;
+	}
+	.table-set td, th {
+		font-weight: bold;
+	}
+	.table-name{
+		width: 100%;
+	}
+}
+</style>
+<table align="center" class="table-name">
+    <tr>
+        <td align="center" colspan="6">
+        <u><strong>TAGIHAN MAHASISWA</strong></u>
+        </td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td align="left" width="20%" colspan="2"><strong>NIM</strong></td>
+        <td align="left" colspan="4"><strong>:</strong> &emsp;191141004</td>
+    </tr>
+    <tr>
+    	<td align="left" colspan="2"><strong>Nama Mahasiswa</strong></td>
+        <td align="left" colspan="4"><strong>:</strong> &emsp;ALDA PRAHTITIS APITYA SANDRA</td>
+    </tr>
+    <tr>
+    	<td align="left" colspan="2"><strong>Semester</strong></td>
+        <td align="left" colspan="4"><strong>:</strong> &emsp;20201</td>
+    </tr>
+    <tr>
+    	<td align="left" colspan="2"><strong>Jurusan</strong></td>
+        <td align="left" colspan="4"><strong>:</strong> &emsp;S1 - Ilmu Keperawatan</td>
+    </tr>
+    <tr>
+    	<td align="left" colspan="2"><strong>Status</strong></td>
+        <td align="left" colspan="4"><strong>:</strong> &emsp;AKTIF                                   </td>
+    </tr>
+    <tr>
+		        <td align="left" colspan="2"><strong>Periode</strong></td>
+        <td align="left" colspan="4"><strong>:</strong> &emsp;2020/2021 Ganjil</td>
+		    </tr>
+</table>
+<br>
+<table class="table table-bordereds" align="center">
+	<tr>
+		<th rowspan="2" width="5%" align="center">No</th>
+		<th rowspan="2" width="20%" align="center">ID Tagihan</th>
+		<th rowspan="2" align="center">Jenis Tagihan</th>
+		<th rowspan="2" align="center">Periode Tagihan</th>
+		<th rowspan="2" align="center">Nominal</th>
+		<th rowspan="2" align="center">Status</th>
+	</tr>
+	<tr>
+    </tr>
+		<tr>
+		<td align="center">1</td>
+		<td align="center"><i style="color:white">_</i>201920700000019114100401</td>
+		<td align="center">
+			HER REGIS, SPP DAN SIM		</td>
+		<td align="center">
+			2019/2020 Genap		</td>
+		<td align="right">Rp. 5.000.000</td>
+		<td align="center">Lunas</td>
+	</tr>
+		<tr>
+		<td align="center">2</td>
+		<td align="center"><i style="color:white">_</i>201921700000019114100401</td>
+		<td align="center">
+			UJIAN SEMESTER		</td>
+		<td align="center">
+			2019/2020 Genap		</td>
+		<td align="right">Rp. 500.000</td>
+		<td align="center">Lunas</td>
+	</tr>
+		<tr>
+		<td align="center">3</td>
+		<td align="center"><i style="color:white">_</i>202010700000019114100401</td>
+		<td align="center">
+			HER REGIS, SPP DAN SIM		</td>
+		<td align="center">
+			2020/2021 Ganjil		</td>
+		<td align="right">Rp. 5.000.000</td>
+		<td align="center">Lunas</td>
+	</tr>
+		<tr>
+		<td align="center">4</td>
+		<td align="center"><i style="color:white">_</i>202011700000019114100401</td>
+		<td align="center">
+			UJIAN SEMESTER		</td>
+		<td align="center">
+			2020/2021 Ganjil		</td>
+		<td align="right">Rp. 500.000</td>
+		<td align="center">Lunas</td>
+	</tr>
+	</table>
+<table class="table-set" align="center">
+	<tr>
+		<td width="20%" colspan="2">Tagihan Lunas</td>
+		<td align="left" colspan="4"><strong>:</strong>&emsp;Rp. 11.000.000</td>
+	</tr>
+	<tr>
+		<td colspan="2">Tagihan Belum Lunas</td>
+		<td align="left" colspan="4"><strong>:</strong>&emsp;Rp. 0</td>
+	</tr>
+	<tr>
+	</tr>
+</table>
+<br />
+<br />
+<!--  -->
+<table class="table-sign" align="center">
+	<tr>
+		<td colspan="4"></td>
+		<td colspan="2" width="20%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="4"></td>
+		<td colspan="2" align="center">Kec. Sukolilo, 15 September 2020 </td>
+	</tr>
+	<tr>
+		<td colspan="4"></td>
+		<td colspan="2" align="center">Keuangan</td>
+	</tr>
+	<tr>
+		<td colspan="4"></td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="4"></td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="4"></td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="4"></td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="4"></td>
+		<td colspan="2" align="center" style="border-bottom : 1px solid #000">Reva Mahardika, SE</td>
+	</tr>
+	<tr>
+		<td colspan="4"></td>
+		<td colspan="2" align="center">NIP. 07314603051</td>
+	</tr>
+</table>
+</body>
+</html>

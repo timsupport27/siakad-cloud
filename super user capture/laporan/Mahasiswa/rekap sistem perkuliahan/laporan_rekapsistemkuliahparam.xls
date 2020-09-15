@@ -1,0 +1,883 @@
+
+<html>
+
+<head>
+	<title>Cetak Rekap Sistem Perkuliahan Mahasiswa</title>
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+	<link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<style>
+		body {
+			margin: 0 auto;
+		}
+
+		body,
+		td,
+		th {
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 12px;
+		}
+
+		th {
+			text-align: center;
+		}
+
+		.nama_pt {
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 1.1;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.info_pt {
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.kop {
+			border-spacing: 0;
+			border-collapse: collapse;
+			border-bottom-style: double;
+		}
+
+		.side {
+			width: 8%;
+		}
+
+		.img {
+			width: 80px;
+		}
+
+		@media screen {
+			.kop-width {
+				width: 70%;
+			}
+		}
+
+		@media print {
+			.kop-width {
+				width: 100%;
+			}
+		}
+
+		@media screen {
+
+
+			.kop-logo {
+				width: 70%;
+				margin: 0 auto;
+			}
+
+			.kop-logo img {
+				width: 100%;
+			}
+			.custom-kop-html table{
+				width: 70% !important;
+				text-align: center !important;
+			}
+		}
+
+		@media print {
+
+			.kop-logo {
+				width: 100% !important;
+			}
+
+			.kop-logo img {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<p class="navbar-brand">Cetak Rekap Sistem Perkuliahan Mahasiswa</p>
+				<button type="button" class="btn btn-primary btn-flat navbar-btn navbar-right" onclick="window.print(); return false;"><i class="fa fa-print"></i> Cetak</button>
+			</div>
+		</nav>
+				<table width="70%" align="center" class="kop kop-width">
+			<tr>
+				<td class="side"></td>
+				<td class="img" rowspan="3">
+											<img src="http://siakad.stikessurabaya.ac.id/uploads/logoPT.png" alt="logo" class="logo-default" height="80">
+									</td>
+				<td colspan="6" class="nama_pt">
+					<!-- SEKOLAH TINGGI ILMU KESEHATAN SURABAYA -->
+					SEKOLAH TINGGI ILMU KESEHATAN SURABAYA				</td>
+				<td class="side"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="6" class="info_pt">
+					<!-- Alamat : Jl Medokan Semampir Indah 27 -->
+					Alamat : Jl Medokan Semampir Indah 27				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="6" class="info_pt">
+					<!-- Kodepos : 60296, Telepon : 031-5913372 -->
+					Kodepos : 60296, 					Telepon : 031-5913372				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td colspan="6" style="border-bottom:1px solid black; padding-bottom: 8px;" class="info_pt">
+					<!-- Website : www.stikessurabaya.ac.id, Email : info@stikessurabaya.ac.id, Faximile : 031-5939466 -->
+					Website : www.stikessurabaya.ac.id | 					Email : info@stikessurabaya.ac.id | 					Faximile : 031-5939466				</td>
+				<td></td>
+			</tr>
+		</table>
+	<br/>
+<style type="text/css">
+	@media screen{
+		.table-head{
+			width: 70%;
+		}
+		.table-bordereds{
+			border-collapse: collapse;
+			width: 70%;
+		}
+		.table-bordereds td,
+		.table-bordereds th {
+		    border: 1px solid #000!important;
+		}
+
+		.table-sign{
+			width: 70%;
+		}
+	}
+	@media print{
+		@page{
+			size: A4 portrait landscape;
+		}
+		.table-head{
+			width: 100%;
+		}
+		.table-bordereds{
+			border-collapse: collapse;
+			width: 100%;
+		}
+		.table-bordereds td,
+		.table-bordereds th {
+		    border: 1px solid #000!important;
+		}
+
+		.table-sign{
+			width: 100%;
+		}
+	}
+</style>
+<!-- <table class="table-head" align="center">
+	<tr>
+        <td align="center" colspan="9" style="font-size: 16px;">
+        	<strong>REKAP SISTEM PERKULIAHAN MAHASISWA</strong>
+        </td>
+    </tr>
+    <tr>
+    	<td colspan="9">&nbsp</td>
+    </tr>
+	<tr>
+		<td align="left" width="12%" colspan="2"><strong>Program Studi</strong></td>
+		<td align="left" colspan="2"><strong>:</strong>&emsp;S1 - Ilmu Keperawatan</td>
+		<td></td>
+		<td align="left" width="12%" colspan="2"><strong>Angkatan</strong></td>
+		<td align="left" colspan="2"><strong>:</strong>&emsp;</td>
+	</tr>
+</table><br/> -->
+	<table class="table table-bordereds" align="center">
+    <thead>
+        <tr class="info">
+            <th style="width:20px">No.</th>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Program Studi</th>
+            <th>Angkatan</th>
+            <th>Sistem Kuliah</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+            <td>1</td>
+            <td>191141001</td>
+            <td>ADONIA SILPA MARION DRUNYI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>2</td>
+            <td>191141002</td>
+            <td>AGUNG WISNU RYANDIKA PUTRA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>3</td>
+            <td>191141003</td>
+            <td>AGUSTIEN SRI KASTRINA SELAN</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>4</td>
+            <td>191141004</td>
+            <td>ALDA PRAHTITIS APITYA SANDRA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>5</td>
+            <td>191141005</td>
+            <td>ALFI PUTRI PRAMITASARI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>6</td>
+            <td>191141006</td>
+            <td>ANA WAHYUNI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>7</td>
+            <td>191141007</td>
+            <td>ANANDA FATYA SETIANINGRUM</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>8</td>
+            <td>191141008</td>
+            <td>ANDI SUGISTINO PRAYOGA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>9</td>
+            <td>191141009</td>
+            <td>ANNISA REYHANITA NINGSIH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>10</td>
+            <td>191141010</td>
+            <td>ARINI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>11</td>
+            <td>191141011</td>
+            <td>AYU AFRILLIA OVIANA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>12</td>
+            <td>191141012</td>
+            <td>CINDY ANGGITA PUTRI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>13</td>
+            <td>191141013</td>
+            <td>DELAVIASANNY TUBULAU CUNHA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>14</td>
+            <td>191141014</td>
+            <td>DEONIZIO CAJUSTI COLO</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>15</td>
+            <td>191141015</td>
+            <td>DESI ROHMAH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>16</td>
+            <td>191141016</td>
+            <td>DEVI INSULINA BR SINULINGGA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>17</td>
+            <td>191141017</td>
+            <td>DIAH MITA WIDIANI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>18</td>
+            <td>191141018</td>
+            <td>ENJEL KOSTANSA WAITAU</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>19</td>
+            <td>191141019</td>
+            <td>DIANA PUTRI PUSPITASARI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>20</td>
+            <td>191141020</td>
+            <td>FERSALIN OKTOVINA UMBORA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>21</td>
+            <td>191141021</td>
+            <td>FARAHIYAH MAZAYAH ISCHAK</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>22</td>
+            <td>191141022</td>
+            <td>FINA ROHMATUL UMMAH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>23</td>
+            <td>191141023</td>
+            <td>FETSHIE ARIESTA FANNY</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>24</td>
+            <td>191141024</td>
+            <td>FITRI'A TRI SUNTARI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>25</td>
+            <td>191141025</td>
+            <td>FIRDA SABRINA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>26</td>
+            <td>191141026</td>
+            <td>HAVIVAH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>27</td>
+            <td>191141027</td>
+            <td>GITA YUNITA PANOSA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>28</td>
+            <td>191141028</td>
+            <td>HILYA HUMAIDAH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>29</td>
+            <td>191141029</td>
+            <td>HESTI LARATMASE</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>30</td>
+            <td>191141031</td>
+            <td>I GUSTI PUTU BAGUS SURYA SAPUTRA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>31</td>
+            <td>191141032</td>
+            <td>INDRI YANI OKTA BRIANTI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>32</td>
+            <td>191141033</td>
+            <td>IMELDA PUTRI BERNANDA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>33</td>
+            <td>191141034</td>
+            <td>JOALANDIO VASCO QUEFI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>34</td>
+            <td>191141035</td>
+            <td>INTAN PERMATASARI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>35</td>
+            <td>191141036</td>
+            <td>KATARINA FIRAWATI FENYAPWAIN</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>36</td>
+            <td>191141037</td>
+            <td>LAILATUL MAFRUHAH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>37</td>
+            <td>191141038</td>
+            <td>LEINAD TILMAN MARCAL</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>38</td>
+            <td>191141039</td>
+            <td>LELYANA NUR INDAH SARI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>39</td>
+            <td>191141040</td>
+            <td>MAHFUDHOTUL JANNAH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>40</td>
+            <td>191141041</td>
+            <td>MARIA TEKEGE</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>41</td>
+            <td>191141042</td>
+            <td>MAULIDATUL MAS'UDAH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>42</td>
+            <td>191141043</td>
+            <td>MEGA PRATAMA SURYA NINGSIH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>43</td>
+            <td>191141044</td>
+            <td>MEGA PUTRI AULIYA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>44</td>
+            <td>191141045</td>
+            <td>MUHAMMAD SHOFIYUL UMAM</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>45</td>
+            <td>191141046</td>
+            <td>NUR ROTUL AFIFAH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>46</td>
+            <td>191141047</td>
+            <td>NUR AINI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>47</td>
+            <td>191141048</td>
+            <td>RAHMA SHAVIRA ARDANA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>48</td>
+            <td>191141049</td>
+            <td>PRISKA ARLINDA PERMATA PUTRI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>49</td>
+            <td>191141050</td>
+            <td>REVINDA NAVY FEBRIANITA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>50</td>
+            <td>191141051</td>
+            <td>RATIH ARUM ARDANA JUNIARTOKO</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>51</td>
+            <td>191141052</td>
+            <td>RIANDANI FADILAH SAE</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>52</td>
+            <td>191141053</td>
+            <td>RISKI APRILIANI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>53</td>
+            <td>191141054</td>
+            <td>RIZKA NURHALIZAH FEBRIANTI INTAN SANTOSO</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>54</td>
+            <td>191141055</td>
+            <td>RIZKI RIDHA ALIEF YANA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>55</td>
+            <td>191141056</td>
+            <td>ROFIQI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>56</td>
+            <td>191141057</td>
+            <td>ROIBAH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>57</td>
+            <td>191141058</td>
+            <td>ROSA YULITA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>58</td>
+            <td>191141059</td>
+            <td>ROSITA SOARES</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>59</td>
+            <td>191141060</td>
+            <td>SATYA JULIANTI ANGGREINI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>60</td>
+            <td>191141062</td>
+            <td>SHINDY LARASATI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>61</td>
+            <td>191141063</td>
+            <td>SITTI AISYAH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>62</td>
+            <td>191141064</td>
+            <td>SINDI FATIKA SARI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>63</td>
+            <td>191141065</td>
+            <td>SYAFIRA HIMAIROH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Beasiswa Bidikmisi (03)</td> 
+        </tr>
+            <tr>
+            <td>64</td>
+            <td>191141066</td>
+            <td>SUCIANA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>65</td>
+            <td>191141067</td>
+            <td>THARISA BERLIANA SALSABILLA PUTRI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>66</td>
+            <td>191141068</td>
+            <td>TALITHA OCTHAVERINA BUDIONO</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>67</td>
+            <td>191141069</td>
+            <td>ZIYANATUR ROZIQOH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>68</td>
+            <td>191141070</td>
+            <td>ANGGA SUDANA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>69</td>
+            <td>191141071</td>
+            <td>ARIVANDO YOGA PAPANGDIKA OBESONYA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>70</td>
+            <td>191141072</td>
+            <td>DARED GESANG SUKMANA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>71</td>
+            <td>191141073</td>
+            <td>DIAS MUTIARA KASIH</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>72</td>
+            <td>191141074</td>
+            <td>FITRI HANDAYANI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>73</td>
+            <td>191141075</td>
+            <td>MARLEN LOPUHAA</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>74</td>
+            <td>191141076</td>
+            <td>YOGI ABDUL GHAFUR</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>75</td>
+            <td>191141077</td>
+            <td>WANCUK OKTYONOK</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>76</td>
+            <td>191141078</td>
+            <td>EROWATI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>77</td>
+            <td>191141079</td>
+            <td>KOERIYANTO</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>78</td>
+            <td>191141080</td>
+            <td>FANIA RACMANINGRUM</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+            <tr>
+            <td>79</td>
+            <td>191141081</td>
+            <td>KUSUMANINGTIAS HAVEYUARTI</td>
+            <td>S1 - Ilmu Keperawatan</td>
+            <td>2019</td>
+            <td>Reguler (01)</td> 
+        </tr>
+        </tbody>
+</table>
+<br />
+<!--  -->
+<table class="table-sign" align="center">
+	<tr>
+		<td colspan="6"></td>
+		<td align="center" colspan="3" width="25%">Kec. Sukolilo, 7 Januari 2020 </td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td align="center" colspan="3"></td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td align="center" style="border-bottom: 1px solid #000" colspan="3"></td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td align="center" colspan="3">'</td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

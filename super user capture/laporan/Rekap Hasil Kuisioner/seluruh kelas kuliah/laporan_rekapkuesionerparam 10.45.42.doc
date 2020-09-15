@@ -1,0 +1,676 @@
+
+<html>
+
+<head>
+	<title>Cetak Rekap Hasil Kuesioner</title>
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+	<link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<style>
+		body {
+			margin: 0 auto;
+		}
+
+		body,
+		td,
+		th {
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 12px;
+		}
+
+		th {
+			text-align: center;
+		}
+
+		.nama_pt {
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 1.1;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.info_pt {
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.kop {
+			border-spacing: 0;
+			border-collapse: collapse;
+			border-bottom-style: double;
+		}
+
+		.side {
+			width: 8%;
+		}
+
+		.img {
+			width: 80px;
+		}
+
+		@media screen {
+			.kop-width {
+				width: 70%;
+			}
+		}
+
+		@media print {
+			.kop-width {
+				width: 100%;
+			}
+		}
+
+		@media screen {
+
+
+			.kop-logo {
+				width: 70%;
+				margin: 0 auto;
+			}
+
+			.kop-logo img {
+				width: 100%;
+			}
+			.custom-kop-html table{
+				width: 70% !important;
+				text-align: center !important;
+			}
+		}
+
+		@media print {
+
+			.kop-logo {
+				width: 100% !important;
+			}
+
+			.kop-logo img {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<p class="navbar-brand">Cetak Rekap Hasil Kuesioner</p>
+				<button type="button" class="btn btn-primary btn-flat navbar-btn navbar-right" onclick="window.print(); return false;"><i class="fa fa-print"></i> Cetak</button>
+			</div>
+		</nav>
+				<table width="70%" align="center" class="kop kop-width">
+			<tr>
+				<td class="side"></td>
+				<td class="img" rowspan="3">
+											<img src="http://siakad.stikessurabaya.ac.id/uploads/logoPT.png" alt="logo" class="logo-default" height="80">
+									</td>
+				<td colspan="6" class="nama_pt">
+					<!-- SEKOLAH TINGGI ILMU KESEHATAN SURABAYA -->
+					SEKOLAH TINGGI ILMU KESEHATAN SURABAYA				</td>
+				<td class="side"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="6" class="info_pt">
+					<!-- Alamat : Jl Medokan Semampir Indah 27 -->
+					Alamat : Jl Medokan Semampir Indah 27				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="6" class="info_pt">
+					<!-- Kodepos : 60296, Telepon : 031-5913372 -->
+					Kodepos : 60296, 					Telepon : 031-5913372				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td colspan="6" style="border-bottom:1px solid black; padding-bottom: 8px;" class="info_pt">
+					<!-- Website : www.stikessurabaya.ac.id, Email : info@stikessurabaya.ac.id, Faximile : 031-5939466 -->
+					Website : www.stikessurabaya.ac.id | 					Email : info@stikessurabaya.ac.id | 					Faximile : 031-5939466				</td>
+				<td></td>
+			</tr>
+		</table>
+	<br/>
+<style type="text/css">
+	@media screen{
+		.table-head{
+			width: 70%;
+		}
+		.table-bordereds{
+			border-collapse: collapse;
+			width: 70%;
+		}
+		.table-bordereds td,
+		.table-bordereds th {
+		    border: 1px solid #000!important;
+		}
+
+		.table-sign{
+			width: 70%;
+		}
+	}
+	@media print{
+		@page{
+			size: A4 portrait landscape;
+		}
+		.table-head{
+			width: 100%;
+		}
+		.table-bordereds{
+			border-collapse: collapse;
+			width: 100%;
+		}
+		.table-bordereds td,
+		.table-bordereds th {
+		    border: 1px solid #000!important;
+		}
+
+		.table-sign{
+			width: 100%;
+		}
+}
+</style>
+<table class="table-head" align="center">
+	<tr>
+        <td align="center" colspan="9" style="font-size: 16px;">
+        	<strong>REKAP HASIL KUESIONER DOSEN</strong>
+        </td>
+    </tr>
+    <tr>
+    	<td colspan="9">&nbsp</td>
+    </tr>
+	<tr>
+		<td align="left" width="12%" colspan="2"><strong>NIDN / Nama Dosen</strong></td>
+		<td align="left" colspan="2"><strong>:</strong>&emsp;9907159947 - PUTRI PAMUNGKAS</td>
+		<td></td>
+		<td align="left" width="12%" colspan="2"><strong>Periode Kuesioner</strong></td>
+		<td align="left" colspan="2"><strong>:</strong>&emsp;2019/2020 Genap</td>
+	</tr>
+</table>
+<br/>
+<center>
+<h4>Hasil Kuesioner Pilihan Ganda</h4>
+<table class="table table-bordereds">
+    <thead>
+        <tr class="info">
+            <th rowspan="3" style="vertical-align:middle;">No.</th>
+            <th rowspan="3" style="vertical-align:middle;">Aspek Penilaian</th>
+            <th rowspan="3" style="vertical-align:middle;">Deskripsi</th>
+            <th colspan="5" style="vertical-align:middle;"><center>Skala / Skor</center></th>
+            <th rowspan="3" style="vertical-align:middle;"><center>Jumlah<br/>Koresponden</center></th>
+            <th rowspan="3" style="vertical-align:middle;"><center>Nilai Akhir</center></th>
+        </tr>
+        <tr class="info">
+                    <th><center>Sangat Kurang</center></th>
+                    <th><center>Kurang</center></th>
+                    <th><center>Biasa/Cukup</center></th>
+                    <th><center>Baik</center></th>
+                    <th><center>Sangat Baik</center></th>
+                </tr>
+        <tr class="info">
+                    <th><center>1</center></th>
+                    <th><center>2</center></th>
+                    <th><center>3</center></th>
+                    <th><center>4</center></th>
+                    <th><center>5</center></th>
+                </tr>
+    </thead>
+    <tbody>
+                    <tr>
+                <td><center>1</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kemampuan dosen dalam mengembangkan materi pada silabus *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>2</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kemampuan dosen dalam memperbarui materi sejalan dengan perkembangan IPTEK *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>3</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kelengkapan atribut pembelajaran, meliputi kontrak perkuliahan dan menyampaikan silabus diawal perkuliahan *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>4</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kejelasan dalam pemberian tugas (instruksi tugas dan penilaian) *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>5</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kemampuan dosen dalam menggunakan metode pembelajaran yang variatif *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>6</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kemampuan dosen dalam menggunakan media pembelajaran yang sesuai (laptop/LCD proyektor,dll). *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>7</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kemampuan dosen dalam memanfaatkan teknologi pembelajaran yang sesuai (video/gambar/animasi, dll) *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>8</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kemampuan dosen dalam menciptakan suasana belajar yang menyenangkan *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>9</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kemampuan dosen dalam menciptakan suasana belajar yang dialogis (tercipta dialog yang baik antara dosen dengan mahasiswa) *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>10</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kemampuan dosen dalam menciptakan suasana belajar yang rileks tapi bernuansa akademis *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>11</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kesiapan memberikan kuliah dan/atau praktek/praktikum *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>12</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kemampuan dosen dalam membimbing praktik (skill lab/klinik) *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>13</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Keteraturan dan ketertiban penyelenggaraan perkuliahan *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>14</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Keanekaragaman cara pengukuran hasil belajar *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>15</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Pemberian umpan balik terhadap tugas *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>16</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kesesuaian materi ujian dan/atau tugas dengan tujuan mata kuliah *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>17</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kemampuan mengarahkan/memfasilitasi diskusi sehingga mencapai tujuan pembelajaran *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>18</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Keragaman penggunaan sumber belajar *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>19</center></td>
+                <td>Kompetensi Padagogik</td>
+                <td>Kejelasan penyampaian materi dan jawaban terhadap pertanyaan dikelas *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>20</center></td>
+                <td>Kompetensi Profesional</td>
+                <td>Kemampuan dosen dalam memahami bahan/materi yang diajarkan *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>21</center></td>
+                <td>Kompetensi Profesional</td>
+                <td>Kemampuan menjelaskan pokok bahasan/topik secara tepat *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>22</center></td>
+                <td>Kompetensi Profesional</td>
+                <td>Kemampuan dalam memberikan contoh yang relevan dari materi yang diajarkan *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>23</center></td>
+                <td>Kompetensi Profesional</td>
+                <td>Kemampuan menjelaskan keterkaitan topik yang diajarkan dengan topik lain yang relevan *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>24</center></td>
+                <td>Kompetensi Profesional</td>
+                <td>Kemampuan menjelaskan keterkaitan topik yang diajarkan dengan konteks kehidupan *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>25</center></td>
+                <td>Kompetensi Profesional</td>
+                <td>Penguasaan akan isu-isu mutakhir dalam bidang yang diajarkan *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>26</center></td>
+                <td>Kompetensi Profesional</td>
+                <td>Penggunaan hasil-hasil penelitian untuk meningkatkan kualitas perkuliahan *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>27</center></td>
+                <td>Kompetensi Profesional</td>
+                <td>Pelibatan mahasiswa dalam penelitian/kajian dan atau pengembangan yang dilakukan *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>28</center></td>
+                <td>Kompetensi Profesional</td>
+                <td>Kedalaman dan keluasan dalam memberikan/membahas contoh kasus *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>29</center></td>
+                <td>Kompetensi Kepribadian</td>
+                <td>Kewibawaan sebagai pribadi dosen *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>30</center></td>
+                <td>Kompetensi Kepribadian</td>
+                <td>Kearifan dalam mengambil keputusan *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>31</center></td>
+                <td>Kompetensi Kepribadian</td>
+                <td>Menjadi contoh (role model) yang baik dalam bersikap dan berperilaku *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>32</center></td>
+                <td>Kompetensi Kepribadian</td>
+                <td>Sopan santun dalam berucap dan bertindak *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>33</center></td>
+                <td>Kompetensi Kepribadian</td>
+                <td>Kemampuan mengendalikan diri dalam berbagai situasi dan kondisi *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>34</center></td>
+                <td>Kompetensi Kepribadian</td>
+                <td>Keadilan dalam memperlakukan mahasiswa (tidak pilih kasih)</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>35</center></td>
+                <td>Kompetensi Kepribadian</td>
+                <td>Santunya kata dan tindakan (konsisten) *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>36</center></td>
+                <td>Kompetensi Sosial</td>
+                <td>Kemampuan menyampaikan pendapat *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>37</center></td>
+                <td>Kompetensi Sosial</td>
+                <td>Kemampuan menerima kritik, saran, dan pendapat orang lain *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>38</center></td>
+                <td>Kompetensi Sosial</td>
+                <td>Mengenal dengan baik mahasiswa yang mengikuti kuliahnya *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>39</center></td>
+                <td>Kompetensi Sosial</td>
+                <td>Mudah bergaul dikalangan sejawat (dosen), karyawan, dan mahasiswa *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    <tr>
+                <td><center>40</center></td>
+                <td>Kompetensi Sosial</td>
+                <td>Toleransi terhadap keberagaman mahasiswa (agama,suku,kepercayaan,dll) *</td>
+                <td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td><td><center>0</center></td>                <td><center>0</center></td>
+                <td>
+                    <center>
+                    0.00                    </center>
+                </td>
+            	            </tr>
+                    </tr>
+                    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="9" align="right">Rata-rata Nilai Akhir</td>
+            <td><center>0.00</center></td>
+        </tr>
+    </tfoot>
+</table>
+</center>
+<br />
+<!--  -->
+<table class="table-sign" align="center">
+	<tr>
+		<td colspan="6"></td>
+		<td align="center" colspan="3" width="25%">Kec. Sukolilo, 24 Agustus 2020 </td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td align="center" colspan="3"></td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td align="center" style="border-bottom: 1px solid #000" colspan="3"></td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td align="center" colspan="3"></td>
+	</tr>
+	<tr>
+		<td colspan="6"></td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,474 @@
+
+<html>
+
+<head>
+	<title>Cetak Laporan KRS</title>
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+	<link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<style>
+		body {
+			margin: 0 auto;
+		}
+
+		body,
+		td,
+		th {
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 12px;
+		}
+
+		th {
+			text-align: center;
+		}
+
+		.nama_pt {
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 1.1;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.info_pt {
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.kop {
+			border-spacing: 0;
+			border-collapse: collapse;
+			border-bottom-style: double;
+		}
+
+		.side {
+			width: 8%;
+		}
+
+		.img {
+			width: 80px;
+		}
+
+		@media screen {
+			.kop-width {
+				width: 70%;
+			}
+		}
+
+		@media print {
+			.kop-width {
+				width: 100%;
+			}
+		}
+
+		@media screen {
+
+
+			.kop-logo {
+				width: 70%;
+				margin: 0 auto;
+			}
+
+			.kop-logo img {
+				width: 100%;
+			}
+			.custom-kop-html table{
+				width: 70% !important;
+				text-align: center !important;
+			}
+		}
+
+		@media print {
+
+			.kop-logo {
+				width: 100% !important;
+			}
+
+			.kop-logo img {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<p class="navbar-brand">Cetak Laporan KRS</p>
+				<button type="button" class="btn btn-primary btn-flat navbar-btn navbar-right" onclick="window.print(); return false;"><i class="fa fa-print"></i> Cetak</button>
+			</div>
+		</nav>
+				<table width="70%" align="center" class="kop kop-width">
+			<tr>
+				<td class="side"></td>
+				<td class="img" rowspan="3">
+											<img src="http://siakad.stikessurabaya.ac.id/uploads/logoPT.png" alt="logo" class="logo-default" height="80">
+									</td>
+				<td colspan="5" class="nama_pt">
+					<!-- SEKOLAH TINGGI ILMU KESEHATAN SURABAYA -->
+					SEKOLAH TINGGI ILMU KESEHATAN SURABAYA				</td>
+				<td class="side"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="5" class="info_pt">
+					<!-- Alamat : Jl Medokan Semampir Indah 27 -->
+					Alamat : Jl Medokan Semampir Indah 27				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="5" class="info_pt">
+					<!-- Kodepos : 60296, Telepon : 031-5913372 -->
+					Kodepos : 60296, 					Telepon : 031-5913372				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td colspan="5" style="border-bottom:1px solid black; padding-bottom: 8px;" class="info_pt">
+					<!-- Website : www.stikessurabaya.ac.id, Email : info@stikessurabaya.ac.id, Faximile : 031-5939466 -->
+					Website : www.stikessurabaya.ac.id | 					Email : info@stikessurabaya.ac.id | 					Faximile : 031-5939466				</td>
+				<td></td>
+			</tr>
+		</table>
+	<br/>
+<style type="text/css">
+@media screen{
+	.table-name{
+		width: 70%;
+	}
+	.table-bordereds{
+		border-collapse: collapse;
+		width: 70%;
+	}
+	.table-bordereds td,
+	.table-bordereds th {
+	    border: 1px solid #000!important;
+	}
+
+	.table-sign{
+		width: 70%;
+		margin-right: 15%;
+	}
+}
+@media print{
+	@page{
+		size: A4 portrait landscape;
+	}
+	.table-bordereds{
+		border-collapse: collapse;
+		width: 100%;
+	}
+	.table-bordereds td,
+	.table-bordereds th {
+	    border: 1px solid #000!important;
+	}
+
+	.table-sign{
+		width: 100%;
+		margin-right: 0%;
+	}
+
+	.table-name{
+		width: 100%;
+	}
+}
+</style>
+<table align="center" class="table-name">
+    <tr>
+        <td align="center" colspan="8" style="font-size: 16px;">
+        	<strong><u>KARTU RENCANA STUDI (KRS)</u></strong>
+        </td>
+    </tr>
+    <tr>
+    	<td colspan="8">&nbsp</td>
+    </tr>
+    <tr>
+        <td align="left" width="20%" colspan="2" ><strong>Nama Mahasiswa</strong></td>
+        <td align="left" width="30%" colspan="2"><strong>:</strong> ALDA PRAHTITIS APITYA SANDRA</td>
+        <td align="left" width="20%" colspan="2" ><strong>NIM</strong></td>
+        <td align="left" colspan="2"><strong>:</strong> 191141004</td>
+    </tr>
+    <tr>
+        <td align="left" colspan="2"><strong>Program Studi</strong></td>
+        <td align="left" colspan="2"><strong>:</strong> S1 Ilmu Keperawatan</td>
+		        <td align="left" colspan="2"><strong>Periode</strong></td>
+        <td align="left" colspan="2"><strong>:</strong> 2019/2020 Genap</td>
+		    </tr>
+		<tr>
+				<td align="left" colspan="2"><strong>Semester</strong></td>
+				<td align="left" colspan="2"><strong>:</strong>
+											2									</td>
+		</tr>
+</table>
+<br>
+<table class="table table-bordereds" width="80%" border="1|0" style="border-collapse: collapse;" align="center">
+	<tr>
+		<th rowspan="2" style="vertical-align:middle;">No</th>
+		<th rowspan="2" style="vertical-align:middle;">Kode MK</th>
+		<th rowspan="2" style="vertical-align:middle;">Nama MK</th>
+		<th rowspan="2" style="vertical-align:middle;">Dosen Pengajar</th>
+		<th rowspan="2" style="vertical-align:middle;">SKS</th>
+		<th rowspan="2" style="vertical-align:middle;">Kelas</th>
+		<th colspan="3" style="text-align: center;">Jadwal Perkuliahan</th>
+	</tr>
+	<tr>
+        <th style="vertical-align:middle;">Ruang</th>
+        <th style="vertical-align:middle;">Hari</th>
+        <th style="vertical-align:middle;">Waktu</th>
+    </tr>
+		<tr>
+		<td align="center">1</td>
+		<td align="center">PR0101</td>
+		<td align="left">PANCASILA</td>
+		<td align="left"> ALAIKA M. BAGUS KURNIA PS., DIAN PERDANA FITRI MANDASARI</td>
+		<td align="center">2</td>
+		<td align="center">1B</td>
+		        <td align="center">R3</td>
+        <td align="center">Rabu</td>
+        <td align="center">
+        	15:30 - 17:10        	<!-- 15:30 - 17:10 -->
+        </td>
+	</tr>
+		<tr>
+		<td align="center">2</td>
+		<td align="center">PR0221</td>
+		<td align="left">KOMUNIKASI DALAM KEPERAWATAN I</td>
+		<td align="left"> DENIS FARIDA, RASI RAHAGIA</td>
+		<td align="center">2</td>
+		<td align="center">1B</td>
+		        <td align="center">R1</td>
+        <td align="center">Selasa</td>
+        <td align="center">
+        	09:40 - 11:20        	<!-- 09:40 - 11:20 -->
+        </td>
+	</tr>
+		<tr>
+		<td align="center">3</td>
+		<td align="center">PR0222</td>
+		<td align="left">PENDIDIKAN KESEHATAN DAN PROMKES</td>
+		<td align="left"> EKO BUDI SANTOSO, BASILIUS YOSEPFUS WEU, MINANTON</td>
+		<td align="center">3</td>
+		<td align="center">1B</td>
+		        <td align="center">R4</td>
+        <td align="center">Senin</td>
+        <td align="center">
+        	08:00 - 10:30        	<!-- 08:00 - 10:30 -->
+        </td>
+	</tr>
+		<tr>
+		<td align="center">4</td>
+		<td align="center">PR0223</td>
+		<td align="left">ILMU KEPERAWATAN DASAR II</td>
+		<td align="left"> RETNO AYU YULIASTUTI, RASI RAHAGIA, DIAN PERDANA FITRI MANDASARI</td>
+		<td align="center">3</td>
+		<td align="center">1B</td>
+		        <td align="center">R4</td>
+        <td align="center">Senin</td>
+        <td align="center">
+        	13:00 - 14:40        	<!-- 13:00 - 14:40 -->
+        </td>
+	</tr>
+		<tr>
+		<td align="center">5</td>
+		<td align="center">PR0224</td>
+		<td align="left">ILMU DASAR KEPERAWATAN II</td>
+		<td align="left"> ALPIAN JAYADI, BASILIUS YOSEPFUS WEU, DENIS FARIDA, DIAN PERDANA FITRI MANDASARI</td>
+		<td align="center">4</td>
+		<td align="center">1B</td>
+		        <td align="center">R5</td>
+        <td align="center">Kamis</td>
+        <td align="center">
+        	09:40 - 11:20        	<!-- 09:40 - 11:20 -->
+        </td>
+	</tr>
+		<tr>
+		<td align="center">6</td>
+		<td align="center">PR0225</td>
+		<td align="left">ENTERPRENEUR</td>
+		<td align="left"> OCTO ZULKARNAIN, BASILIUS YOSEPFUS WEU</td>
+		<td align="center">3</td>
+		<td align="center">1B</td>
+		        <td align="center">R3</td>
+        <td align="center">Rabu</td>
+        <td align="center">
+        	13:00 - 14:40        	<!-- 13:00 - 14:40 -->
+        </td>
+	</tr>
+		<tr>
+		<td align="center">7</td>
+		<td align="center">PR0226</td>
+		<td align="left">KONSEP DASAR KEPERAWATAN II</td>
+		<td align="left"> RETNO AYU YULIASTUTI, MINANTON, DENIS FARIDA</td>
+		<td align="center">3</td>
+		<td align="center">1B</td>
+		        <td align="center">R6</td>
+        <td align="center">Jumat</td>
+        <td align="center">
+        	13:00 - 14:40        	<!-- 13:00 - 14:40 -->
+        </td>
+	</tr>
+		<tr>
+		<td colspan="4" align="right"><strong>Jumlah</strong></td>
+		<td align="center">20</td>
+		<td colspan="4"></td>
+	</tr>
+</table>
+<br />
+<table class="table-sign" align="right">
+	<tr>
+		<td width="35%" align="center" colspan="3"></td>
+		<td width="10%"></td>
+		<td width="10%"></td>
+		<td width="10%"></td>
+		<td align="center" width="35%" colspan="2">Kec. Sukolilo, 25 Agustus 2020 </td>
+	</tr>
+	<tr>
+		<td align="center" colspan="3">Mahasiswa</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td align="center" colspan="2">Pembimbing Akademik</td>
+	</tr>
+	<!-- <tr>
+		<td align="center" colspan="3">Penasehat Akademik</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td align="center" colspan="2">Ka. Prodi</td>
+	</tr> -->
+	<tr>
+		<td align="center" colspan="3"></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<!-- <td align="center"> - </td> -->
+		<td colspan="2"></td>
+	</tr>
+	<tr>
+		<td colspan="3"></td>
+		<td></td>
+		<td></td>
+		<td align="center"></td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3"></td>
+		<td></td>
+		<td></td>
+		<td align="center"></td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3"></td>
+		<td></td>
+		<td></td>
+		<td align="center"></td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3"></td>
+		<td></td>
+		<td></td>
+		<td>&nbsp;</td>
+
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3"></td>
+		<td></td>
+		<td></td>
+		<td>&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td align="center" style="border-bottom: 1px solid #000" colspan="3">
+			<strong>ALDA PRAHTITIS APITYA SANDRA</strong>
+		</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td align="center" style="border-bottom: 1px solid #000" colspan="2">
+			<strong>
+				DENIS FARIDA			</strong>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" colspan="3">191141004</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td align="center" colspan="2">
+			0729099201		</td>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+		<td align="center" colspan="3">Ka. Prodi</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3"></td>
+		<td align="center" style="border-bottom: 1px solid #000" colspan="3">
+			<strong>Ariska Putri Hidayathillah., S.Kep. Ns., M. Epid</strong>
+		</td>
+		<td align="center" colspan="2"></td>
+	</tr>
+	<tr>
+		<td colspan="3"></td>
+		<td align="center" colspan="3">'07314614099</td>
+		<td align="center" colspan="2"></td>
+	</tr>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="3">&nbsp;</td>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

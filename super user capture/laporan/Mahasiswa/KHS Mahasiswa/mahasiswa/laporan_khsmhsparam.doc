@@ -1,0 +1,436 @@
+
+<html>
+
+<head>
+	<title>Cetak Laporan KHS Mahasiswa</title>
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+	<link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="http://siakad.stikessurabaya.ac.id/application/assets/metronic/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<style>
+		body {
+			margin: 0 auto;
+		}
+
+		body,
+		td,
+		th {
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 12px;
+		}
+
+		th {
+			text-align: center;
+		}
+
+		.nama_pt {
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 1.1;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.info_pt {
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		.kop {
+			border-spacing: 0;
+			border-collapse: collapse;
+			border-bottom-style: double;
+		}
+
+		.side {
+			width: 8%;
+		}
+
+		.img {
+			width: 80px;
+		}
+
+		@media screen {
+			.kop-width {
+				width: 70%;
+			}
+		}
+
+		@media print {
+			.kop-width {
+				width: 100%;
+			}
+		}
+
+		@media screen {
+
+
+			.kop-logo {
+				width: 70%;
+				margin: 0 auto;
+			}
+
+			.kop-logo img {
+				width: 100%;
+			}
+			.custom-kop-html table{
+				width: 70% !important;
+				text-align: center !important;
+			}
+		}
+
+		@media print {
+
+			.kop-logo {
+				width: 100% !important;
+			}
+
+			.kop-logo img {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<p class="navbar-brand">Cetak Laporan KHS Mahasiswa</p>
+				<button type="button" class="btn btn-primary btn-flat navbar-btn navbar-right" onclick="window.print(); return false;"><i class="fa fa-print"></i> Cetak</button>
+			</div>
+		</nav>
+				<table width="70%" align="center" class="kop kop-width">
+			<tr>
+				<td class="side"></td>
+				<td class="img" rowspan="3">
+											<img src="http://siakad.stikessurabaya.ac.id/uploads/logoPT.png" alt="logo" class="logo-default" height="80">
+									</td>
+				<td colspan="5" class="nama_pt">
+					<!-- SEKOLAH TINGGI ILMU KESEHATAN SURABAYA -->
+					SEKOLAH TINGGI ILMU KESEHATAN SURABAYA				</td>
+				<td class="side"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="5" class="info_pt">
+					<!-- Alamat : Jl Medokan Semampir Indah 27 -->
+					Alamat : Jl Medokan Semampir Indah 27				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="5" class="info_pt">
+					<!-- Kodepos : 60296, Telepon : 031-5913372 -->
+					Kodepos : 60296, 					Telepon : 031-5913372				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td colspan="5" style="border-bottom:1px solid black; padding-bottom: 8px;" class="info_pt">
+					<!-- Website : www.stikessurabaya.ac.id, Email : info@stikessurabaya.ac.id, Faximile : 031-5939466 -->
+					Website : www.stikessurabaya.ac.id | 					Email : info@stikessurabaya.ac.id | 					Faximile : 031-5939466				</td>
+				<td></td>
+			</tr>
+		</table>
+	<br />
+<style type="text/css">
+	@media screen {
+		.table-bordereds {
+			border-collapse: collapse;
+			width: 70%;
+		}
+
+		.table-bordereds td,
+		.table-bordereds th {
+			border: 1px solid #000 !important;
+		}
+
+		.table-sign {
+			width: 20%;
+			margin-right: 15%;
+		}
+
+		.table-name {
+			width: 70%;
+		}
+
+		.batas {
+			width: 70%;
+			margin: auto;
+			font-style: italic;
+			font-size: 14px;
+		}
+	}
+
+	@media print {
+		@page {
+			size: A4 portrait landscape;
+		}
+
+		.table-bordereds {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		.table-bordereds td,
+		.table-bordereds th {
+			border: 1px solid #000 !important;
+		}
+
+		.table-sign {
+			width: 35%;
+			margin-right: 0%;
+		}
+
+		.table-name {
+			width: 100%;
+		}
+
+		.batas {
+			width: 100%;
+			margin: auto;
+			font-style: italic;
+			font-size: 12px;
+		}
+	}
+</style>
+	<table align="center" class="table-name">
+		<tr>
+			<td align="center" colspan="8" style="font-size: 16px;">
+				<strong>KARTU HASIL STUDI (KHS)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="8">&nbsp</td>
+		</tr>
+		<tr>
+			<td align="left" width="20%" colspan="2"><strong>Nama Mahasiswa</strong></td>
+			<td align="left" width="30%" colspan="2"><strong>:</strong> ALDA PRAHTITIS APITYA SANDRA</td>
+			<td align="left" width="20%" colspan="2"><strong>NIM</strong></td>
+			<td align="left" colspan="2"><strong>:</strong> 191141004</td>
+		</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Program Studi</strong></td>
+			<td align="left" colspan="2"><strong>:</strong> S1 Ilmu Keperawatan</td>
+							<td align="left" colspan="2"><strong>Periode</strong></td>
+				<td align="left" colspan="2"><strong>:</strong> 2019/2020 Genap</td>
+					</tr>
+		<tr>
+			<td align="left" colspan="2"><strong>Semester</strong></td>
+			<td align="left" colspan="2"><strong>:</strong> 2</td>
+		</tr>
+	</table>
+
+	<br>
+
+	
+		<table class="table table-bordereds" border="1|0" align="center">
+			<thead>
+				<tr class="info">
+					<th rowspan="2" style="vertical-align:middle;">No.</th>
+					<th rowspan="2" style="vertical-align:middle;">Kode Mata Kuliah</th>
+					<th rowspan="2" style="vertical-align:middle;">Nama Mata Kuliah</th>
+					<th rowspan="2" style="vertical-align:middle;">SKS</th>
+					<th colspan="3" style="text-align: center;">Nilai</th>
+					<th rowspan="2" style="vertical-align:middle; text-align: center;">SKS * Indeks</th>
+				</tr>
+				<tr class="info">
+					<th style="vertical-align:middle; text-align: center;">Angka</th>
+					<th style="vertical-align:middle; text-align: center;">Huruf</th>
+					<th style="vertical-align:middle; text-align: center;">Indeks</th>
+				</tr>
+			</thead>
+							<tbody>
+												<tr>
+								<td align="right">1</td>
+								<td align="center">PR0101</td>
+								<td align="left">PANCASILA</td>
+								<td align="right">2</td>
+								<td align="right">80.8</td>
+								<td align="center">A  </td>
+								<td align="right">4.00</td>
+								<td style="text-align:right">8.00</td>
+							</tr>
+												<tr>
+								<td align="right">2</td>
+								<td align="center">PR0221</td>
+								<td align="left">KOMUNIKASI DALAM KEPERAWATAN I</td>
+								<td align="right">2</td>
+								<td align="right">74.8</td>
+								<td align="center">B  </td>
+								<td align="right">3.00</td>
+								<td style="text-align:right">6.00</td>
+							</tr>
+												<tr>
+								<td align="right">3</td>
+								<td align="center">PR0222</td>
+								<td align="left">PENDIDIKAN KESEHATAN DAN PROMKES</td>
+								<td align="right">3</td>
+								<td align="right">70.3</td>
+								<td align="center">B  </td>
+								<td align="right">3.00</td>
+								<td style="text-align:right">9.00</td>
+							</tr>
+												<tr>
+								<td align="right">4</td>
+								<td align="center">PR0223</td>
+								<td align="left">ILMU KEPERAWATAN DASAR II</td>
+								<td align="right">3</td>
+								<td align="right">76.0</td>
+								<td align="center">B  </td>
+								<td align="right">3.00</td>
+								<td style="text-align:right">9.00</td>
+							</tr>
+												<tr>
+								<td align="right">5</td>
+								<td align="center">PR0224</td>
+								<td align="left">ILMU DASAR KEPERAWATAN II</td>
+								<td align="right">4</td>
+								<td align="right">73.1</td>
+								<td align="center">B  </td>
+								<td align="right">3.00</td>
+								<td style="text-align:right">12.00</td>
+							</tr>
+												<tr>
+								<td align="right">6</td>
+								<td align="center">PR0225</td>
+								<td align="left">ENTERPRENEUR</td>
+								<td align="right">3</td>
+								<td align="right">75.0</td>
+								<td align="center">B  </td>
+								<td align="right">3.00</td>
+								<td style="text-align:right">9.00</td>
+							</tr>
+												<tr>
+								<td align="right">7</td>
+								<td align="center">PR0226</td>
+								<td align="left">KONSEP DASAR KEPERAWATAN II</td>
+								<td align="right">3</td>
+								<td align="right">70.5</td>
+								<td align="center">B  </td>
+								<td align="right">3.00</td>
+								<td style="text-align:right">9.00</td>
+							</tr>
+														</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3" align="right"><strong>Total SKS</strong></td>
+						<td style="text-align:right"><strong>20</strong></td>
+						<td colspan="3"></td>
+						<td style="text-align:right">62.00</td>
+					</tr>
+					<tr>
+						<td colspan="7" align="right"><strong>IPS ( Indeks Prestasi Semester )</strong></td>
+						<th style="text-align:right">3.10</th>
+					</tr>
+					<tr>
+						<td colspan="7" align="right"><strong>IPK ( Indeks Prestasi Kumulatif )</strong></td>
+						<th style="text-align:right">0.00</th>
+					</tr>
+				</tfoot>
+
+			
+		</table>
+
+		<div class="batas">Batas SKS yang bisa diambil di semester berikutnya adalah <b>24 SKS</b></div>
+		<br />
+
+		<table class="table-sign" width="35%" align="right">
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td align="center">Kec. Sukolilo, 25 Agustus 2020 </td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td align="center">Ka. Prodi</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<!-- <td align="center"> - </td> -->
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td align="center" style="border-bottom: 1px solid #000">
+					<strong>Ariska Putri Hidayathillah., S.Kep. Ns., M. Epid</strong>
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td align="center">07314614099</td>
+				<td></td>
+			</tr>
+		</table>
+
+	</body>
+
+</html>
